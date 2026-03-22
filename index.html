@@ -70,11 +70,12 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
+            font-size: 15px;
         }
         .service-icon {
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
         }
         .custom-lists {
             margin-top: 15px;
@@ -191,35 +192,35 @@ If left empty, only the AllowedIPs line will be generated."></textarea>
         <div class="checkbox-group" id="listCheckboxes">
             <div class="checkbox-item">
                 <input type="checkbox" id="list-youtube" checked data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/youtube-ipv4.bat">
-                <label for="list-youtube"><svg class="service-icon" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</label>
+                <label for="list-youtube"><svg class="service-icon" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#FF0000"/><path d="M9.5 15.57V8.43L15.82 12l-6.32 3.57z" fill="#fff"/></svg>YouTube</label>
             </div>
             <div class="checkbox-item">
-                <input type="checkbox" id="list-facebook" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/facebook-ipv4.bat">
-                <label for="list-facebook"><svg class="service-icon" viewBox="0 0 24 24" fill="#1877F2"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 1.09.07 1.373.14V7.73a9 9 0 0 0-.73-.033c-1.034 0-1.436.394-1.436 1.412v1.993h3.451l-.593 3.667H14.17v8.121C19.474 22.167 23.35 17.598 24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.628 3.875 10.35 9.101 11.691z"/></svg>Facebook</label>
+                <input type="checkbox" id="list-telegram" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/telegram-ipv4.bat">
+                <label for="list-telegram"><svg class="service-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#26A5E4"/><path d="M17.47 7.97c.1 0 .32.02.47.14a.51.51 0 0 1 .17.33c.02.09.04.3.02.47-.18 1.9-.96 6.5-1.36 8.63-.17.9-.5 1.2-.82 1.23-.7.07-1.23-.46-1.9-.9-1.06-.7-1.65-1.12-2.68-1.8-1.18-.78-.42-1.21.26-1.91.18-.18 3.25-2.98 3.31-3.23.01-.03.01-.15-.06-.21s-.17-.04-.25-.02c-.1.02-1.79 1.14-5.06 3.34-.48.33-.91.49-1.3.48-.43-.01-1.25-.24-1.87-.44-.75-.25-1.35-.37-1.3-.79.03-.22.33-.44.9-.66 3.5-1.52 5.83-2.53 7-3.01 3.33-1.39 4.02-1.63 4.47-1.64z" fill="#fff"/></svg>Telegram</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="list-chatgpt" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/chatgpt-ipv4.bat">
                 <label for="list-chatgpt"><svg class="service-icon" viewBox="0 0 24 24" fill="#10A37F"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855l-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08L8.704 5.46a.795.795 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/></svg>ChatGPT</label>
             </div>
             <div class="checkbox-item">
+                <input type="checkbox" id="list-claude" data-url="https://raw.githubusercontent.com/superheher/iplist-claude/main/lists/cidr4.txt">
+                <label for="list-claude"><svg class="service-icon" viewBox="0 0 24 24" fill="#D4A27F"><path d="M17.304 3.541l-5.74 16.918H14.7L20.44 3.54h-3.136zm-10.608 0L1.556 20.459h3.2L9.86 3.541z"/></svg>Claude API</label>
+            </div>
+            <div class="checkbox-item">
                 <input type="checkbox" id="list-cloudflare" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/cloudflare-ipv4.bat">
-                <label for="list-cloudflare"><svg class="service-icon" viewBox="0 0 24 24" fill="#F38020"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713.1547.1547 0 0 1-.0107-.1494c.0427-.1162.1494-.2002.2734-.2109l8.7236-.1123c1.0351-.0537 2.1601-.998 2.5537-2.1455l.499-1.4531a.2294.2294 0 0 0 .0095-.1699C18.1532 7.4043 15.3438 4.8008 11.9648 4.8008c-3.0742 0-5.6894 1.9414-6.6914 4.6582C4.5068 9.0469 3.6133 9.3555 2.9463 9.9805 2.2324 10.6486 1.8223 11.5898 1.8223 12.5869c0 .1055.0068.2129.0185.3184a.1572.1572 0 0 0 .1572.1367h14.0332a.1576.1576 0 0 0 .1533-.1162l.3243-1.0811zM19.6309 10.0596c-.0303 0-.0615 0-.0918.0019a.1482.1482 0 0 0-.1318.1006l-.4209 1.4463c-.1475.5068-.0908.9707.1553 1.3154.2246.3164.6045.499 1.0615.5205l.8574.0117a.1559.1559 0 0 1 .1333.0713.1547.1547 0 0 1 .0107.1494c-.0428.1162-.1494.2002-.2735.2109l-.9219.0117c-1.0351.0537-2.16.998-2.5537 2.1455l-.1406.4082a.1528.1528 0 0 0 .0146.1377.1536.1536 0 0 0 .1279.0674h4.8398C23.2031 14.5449 21.6191 12.0176 19.6309 10.0596z"/></svg>Cloudflare</label>
+                <label for="list-cloudflare"><svg class="service-icon" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#F38020"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff" font-family="sans-serif">CF</text></svg>Cloudflare</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="list-rutracker" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/rutracker-ipv4.bat">
+                <label for="list-rutracker"><svg class="service-icon" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#1A6B8E"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff" font-family="sans-serif">RT</text></svg>Rutracker</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="list-facebook" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/facebook-ipv4.bat">
+                <label for="list-facebook"><svg class="service-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path d="M16.67 15.13l.55-3.57h-3.43v-2.31c0-.98.48-1.93 2.01-1.93h1.56V4.17s-1.41-.24-2.76-.24c-2.82 0-4.66 1.71-4.66 4.81v2.72H7.08v3.57h2.86V24h3.52v-8.97z" fill="#fff"/></svg>Facebook</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="list-medium" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/medium-ipv4.bat">
                 <label for="list-medium"><svg class="service-icon" viewBox="0 0 24 24" fill="#cccccc"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>Medium</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" id="list-rutracker" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/rutracker-ipv4.bat">
-                <label for="list-rutracker"><svg class="service-icon" viewBox="0 0 24 24" fill="#1A6B8E"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9V7h2v10zm4 0h-2v-6h2v6z"/></svg>Rutracker</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" id="list-telegram" data-url="https://raw.githubusercontent.com/shlima/keneetic-antifilter/master/routes/telegram-ipv4.bat">
-                <label for="list-telegram"><svg class="service-icon" viewBox="0 0 24 24" fill="#26A5E4"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Telegram</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" id="list-claude" data-url="https://raw.githubusercontent.com/superheher/iplist-claude/main/lists/cidr4.txt">
-                <label for="list-claude"><svg class="service-icon" viewBox="0 0 24 24" fill="#D4A27F"><path d="M17.304 3.541l-5.74 16.918H14.7L20.44 3.54h-3.136zm-10.608 0L1.556 20.459h3.2L9.86 3.541z"/></svg>Claude API</label>
             </div>
         </div>
 
